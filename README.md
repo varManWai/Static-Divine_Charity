@@ -9,4 +9,5 @@ This website is a charity website that promotes the problems existing in the com
 * JQuery
 
 # Example
+This is one of the section in our landing page.
 ![It's a Screenshot of the example output](https://github.com/varManWai/Static-Divine_Charity/blob/master/assets/temp.jpg)
