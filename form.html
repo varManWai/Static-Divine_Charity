@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="./index.html" class="logo-link">
+                <svg width="40" height="40" viewBox="0 0 78 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d)">
+                        <path d="M74 27C72.5357 4.88198 50.011 12.4286 33.2186 0C30.0197 24 62.8048 15.4286 74 27Z"
+                            fill="white" />
+                    </g>
+                    <g filter="url(#filter1_d)">
+                        <path
+                            d="M73.8018 44.4768C66.4094 18.5228 45.3897 31.9426 20.8161 16.4238C22.1401 45.4113 56.1405 29.5551 73.8018 44.4768Z"
+                            fill="white" />
+                    </g>
+                    <g filter="url(#filter2_d)">
+                        <path
+                            d="M73.5649 59.5492C65.0525 30.5962 17.4344 49.3041 4.69471 32.9384C14.6275 72.041 52.1222 41.7464 73.5649 59.5492Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d" x="29" y="0" width="49" height="35" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                        </filter>
+                        <filter id="filter1_d" x="16.8161" y="16.4238" width="60.9857" height="36.053"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                        </filter>
+                        <filter id="filter2_d" x="0.694702" y="32.9384" width="76.8702" height="34.6108"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <span class="logo">Divine Charity</span>
+            </a>
+            <div class="nav-items">
+                <a class="donate-button" href="./form.html">Donate</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h1 class="header">
+            Application Information
+        </h1>
+        <form class="form-container" action="" method="post">
+            <div class="selection-alignment">
+                <div class="selection-input-box">
+                    <label class="selection-label" for="">
+                        title<span class="nessesary">*</span>
+                    </label>
+                    <select name="title" class="selection-input" required>
+                        <option value="mrs">Mrs</option>
+                        <option value="mr">Mr</option>
+                    </select>
+                </div>
+                <div class="selection-input-box">
+                    <label class="selection-label" for="">
+                        category<span class="nessesary">*</span>
+                    </label>
+                    <select name="categories" class="selection-input" required>
+                        <option value="donor">Donor</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="partner">Partner</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-input-box">
+                <label class="text-label" for="name">Name <span class="nessesary">*</span></label>
+                <input class="text-input" type="text" name="name" required>
+            </div>
+            <div class="text-input-box">
+                <label class="text-label" for="ic">ic <span class="nessesary">*</span></label>
+                <input class="text-input" type="text" name="ic" required>
+            </div>
+            <div class="text-input-box">
+                <label class="text-label" for="contact">Contact No.<span class="nessesary">*</span></label>
+                <input class="text-input" type="text" name="contact" required>
+            </div>
+            <div class="text-input-box">
+                <label class="text-label" for="email">Email <span class="nessesary">*</span></label>
+                <input class="text-input" type="text" name="email" required>
+            </div>
+            <div class="text-input-box">
+                <label class="text-label" for="company">Company </label>
+                <input class="text-input" type="text" name="company">
+            </div>
+            <div class="textarea-input-box">
+                <label class="textarea-label" for="remark">Remark </label>
+                <textarea class="textarea-input" name="remark" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button">
+                <button class="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <h6 style="text-align: center;">©Copyright 2021. All rights reserved. Devine Charity.</h6>
+    </footer>
+</body>
+
+</html>

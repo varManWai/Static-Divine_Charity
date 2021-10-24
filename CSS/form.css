@@ -1,0 +1,316 @@
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f9dd4b;
+}
+
+html body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+html body section .header {
+  font-size: clamp(10px, 5vw, 50px);
+  text-align: center;
+  margin: 20px auto;
+}
+
+html body section .form-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+html body section .selection-alignment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 50%;
+  grid-template-columns: 40% 50%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+html body section .text-input-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 70%;
+  grid-template-columns: 20% 70%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 15px 5px;
+}
+
+html body section .text-input-box .text-label {
+  font-size: clamp(15px, 1.5vw, 20px);
+  font-weight: 900;
+  text-align: right;
+  padding-right: 40px;
+  text-transform: capitalize;
+}
+
+html body section .text-input-box .text-input {
+  padding: 10px 20px;
+  border-radius: 300px;
+  background-color: #e5e5e5;
+  border: none;
+  outline: none;
+  font-size: clamp(15px, 1.5vw, 20px);
+}
+
+html body section .selection-input-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 5px;
+}
+
+html body section .selection-input-box .selection-label {
+  font-size: clamp(15px, 1.5vw, 20px);
+  font-weight: 900;
+  text-align: right;
+  padding-right: 40px;
+  text-transform: capitalize;
+}
+
+html body section .selection-input-box .selection-input {
+  padding: 10px 20px;
+  border-radius: 300px;
+  background-color: #e5e5e5;
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 200px;
+  font-size: clamp(15px, 1.5vw, 20px);
+}
+
+html body section .textarea-input-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 66%;
+  grid-template-columns: 20% 66%;
+  margin: 20px 5px;
+}
+
+html body section .textarea-input-box .textarea-label {
+  font-size: clamp(15px, 1.5vw, 20px);
+  font-weight: 900;
+  text-align: right;
+  padding-right: 40px;
+  text-transform: capitalize;
+}
+
+html body section .textarea-input-box .textarea-input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #e5e5e5;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: clamp(15px, 1.5vw, 20px);
+}
+
+html body section .nessesary {
+  color: red;
+}
+
+html body section .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+html body section .button .submit {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(30%, #cf8ee5),
+    to(#db2419)
+  );
+  background-image: linear-gradient(to bottom right, #cf8ee5 30%, #db2419 100%);
+  padding: 10px 50px;
+  border-radius: 300px;
+  border: none;
+  color: white;
+  font-size: clamp(10px, 2vw, 15px);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  html body section .form-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 50px 50px 0 0;
+  }
+  html body section .selection-alignment {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+  html body section .text-input-box {
+    -ms-grid-columns: 30% 65%;
+    grid-template-columns: 30% 65%;
+    margin: 10px 5px;
+  }
+  html body section .selection-input-box {
+    -ms-grid-columns: 30% 70%;
+    grid-template-columns: 30% 70%;
+    margin: 10px 5px;
+  }
+  html body section .selection-input-box .selection-input {
+    width: 90%;
+    max-width: 250px;
+  }
+  html body section .textarea-input-box {
+    -ms-grid-columns: 30% 55%;
+    grid-template-columns: 30% 55%;
+    margin: 10px 5px;
+  }
+  html body section .button .submit {
+    margin-top: 20px;
+    width: 90%;
+    font-size: clamp(15px, 1.5vw, 20px);
+  }
+}
+
+/*Navbar, logo image & donate-btn style*/
+
+html body header .navbar {
+    position: fixed;
+    width: 100vw;
+    background-color: #f9dd4b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 20px;
+  
+    z-index: 102;
+  }
+  
+  html body header .navbar a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    
+    color: black;
+    text-decoration: none;
+  }
+  
+  html body header .navbar .logo {
+    font-size: clamp(1rem, 2vw, 30px);
+    font-weight: 700;
+    padding: 10px 10px;
+  }
+  
+  html body header .navbar .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+    max-width: 15%;
+    margin-right: 30px;
+  }
+  
+  html body header .navbar .nav-items .donate-button {
+    font-size: clamp(1rem, 2vw, 20px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 20px);
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    max-width: 150px;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#cf8ee5),
+      to(#db2419)
+    );
+    background-image: linear-gradient(to right, #cf8ee5 0%, #db2419 100%);
+    border-radius: 300px;
+  }
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 8px 4px 4px 4px;
+}
